@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "myfirstfabric",
+	"version": "${version}",
+	"name": "My First Fabric",
+	"description": "This is taken from a youtube tutorial, thanks Modding by Kaupenjoe.",
+	"authors": [
+		"ManYouCrazy1243"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/myfirstfabric/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.donovan.myfirstfabric.MyFirstFabric"
+		],
+		"fabric-datagen": [
+			"net.donovan.myfirstfabric.MyFirstFabricDataGenerator"
+		],
+		"client": [
+			"net.donovan.myfirstfabric.MyFirstFabricClient"
+		]
+	},
+	"mixins": [
+		"myfirstfabric.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
